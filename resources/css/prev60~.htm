@@ -1,0 +1,637 @@
+<!DOCTYPE html><html><head><title>Preview</title>
+<style type="text/css"><!--
+/* Universal Styles */
+
+html {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+
+body{
+   width: 100%;
+   margin: 0 auto;
+}
+
+.main-content {
+  position: relative;
+  top: 5.3125rem; /* To offset for fixed header. */
+}
+
+.center {
+  text-align: center;
+}
+
+.button {
+  border-radius: 4px;
+  background-color: #4a4a4a;
+  color: white;
+}
+
+.image-container {
+  overflow: hidden;
+}
+
+.image-container img {
+  display: block;
+}
+
+.banner{
+    background-image: url("../images/banner-landingpage.jpg");
+}
+
+#sign-up-cta{
+    margin: 10.625rem 6.25rem;
+}
+
+header{
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    border-bottom: solid 1px #c6c1c1;
+    background-color: white;
+}
+
+header .content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#features-section{
+   display: flex;
+   justify-content: space-around;
+   padding: 4rem 0;
+   background-color: #f3f3f3;
+}
+
+.feature{
+    flex: 1;
+    margin: 0 1.25rem;
+    padding: 2rem;
+    background-color: white;
+}
+
+#features-section .image-container img{
+    margin: 32px 32px 40px 32px;
+    width: 25rem;
+    height: 17.5rem;
+}
+
+#filters-section{
+
+}
+
+#filters-section .images-container{
+    display: flex;
+   flex-direction: row;
+   justify-content: center;
+   margin: 5rem 1% 1rem 1%;
+}
+
+#filters-section .image-container img{
+    width: 21rem;
+    height: 19rem;
+}
+
+#quotes-section .center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 190px;
+}
+
+.quote{
+    font-family: Paladino-italic;
+    padding: 0 1rem;
+    font-size: 30px;
+}
+
+footer .copyright{
+    font-size: 12px;
+    margin: 1rem;
+}
+
+footer .location{
+    font-size: 12px;
+    margin: 1rem;
+}
+
+@media only screen and (max-width: 760px) {
+  .main-content {
+    top: 2.5625rem;
+  }
+}
+
+/* Header */
+
+header {
+  position: fixed;
+  width: 100%;
+  border-bottom: solid 1px #c6c1c1;
+  background-color: white;
+}
+
+header .content {
+  display: flex;
+  align-items: center;
+  padding: 1.875rem;
+}
+
+header .logo {
+  flex: 1;
+}
+
+header nav ul {
+  display: flex;
+}
+
+nav li {
+  padding-left: 3.5rem;
+}
+
+nav a {
+  vertical-align: bottom;
+  line-height: 1.6;
+  font-size: 1rem;
+  color: #4a4a4a;
+}
+
+header .icon {
+  width: 1rem;
+  padding-left: .75rem;
+}
+
+header .mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 760px) {
+  header .desktop {
+    display: none;
+  }
+
+  header .mobile {
+    display: block;
+    width: 100%;
+  }
+
+  header .content {
+    padding: .5rem 0;
+  }
+
+  header .mobile ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+
+  header .mobile li {
+    padding: 0;
+  }
+
+  header .mobile .button {
+    padding: .1875rem .5rem;
+    background-color: #9dc20b;
+    line-height: 1.6;
+    color: white;
+  }
+}
+
+/* Sign Up Section */
+
+#sign-up-section {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 43.5rem;
+}
+
+#sign-up-cta {
+  padding: 0 5rem 2.5rem 5rem;
+  border: solid 1px #979797;
+  border-radius: 4px;
+  background-color: #9dc20b;
+}
+
+#sign-up-cta .content {
+  width: 25.625rem;
+  margin-top: 2rem;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.25rem;
+  line-height: 1.4;
+  color: white;
+}
+
+#sign-up-cta h1 {
+  font-size: 3.125rem;
+}
+
+#sign-up-cta h2 {
+  font-size: 2.25rem;
+}
+
+#sign-up-cta span strong {
+  font-weight: bold;
+}
+
+#sign-up-cta .cursive {
+  font-family: "Damion", cursive;
+}
+
+#sign-up-cta .striking {
+  font-family: "Rubik", sans-serif;
+  padding-bottom: .75rem;
+}
+
+#sign-up-cta .button {
+  margin-top: 1.625rem;
+  padding: 1.25rem 7.25rem;
+}
+
+@media only screen and (max-width: 760px) {
+  #sign-up-section {
+    align-items: center;
+    justify-content: center;
+    height: 28rem;
+  }
+
+  #sign-up-cta {
+    position: static;
+    width: auto;
+    height: auto;
+    background-color: transparent;
+    border: none;
+  }
+
+  #sign-up-cta .content {
+    margin-top: 0;
+  }
+
+  #sign-up-cta .email {
+    display: none;
+  }
+
+  #sign-up-cta h1 {
+    font-size: 3.125rem;
+  }
+
+  #sign-up-cta h2 {
+    font-size: 2.25rem;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  #sign-up-section {
+    height: 20rem;
+  }
+
+  #sign-up-cta h1 {
+    font-size: 2.25rem;
+  }
+
+  #sign-up-cta h2 {
+    font-size: 2rem;
+  }
+}
+
+/* Features Section */
+
+#features-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 4rem 5%;
+  background-color: #f3f3f3;
+}
+
+.feature {
+  flex: 1;
+  padding: 2rem;
+  margin: 0px 1.25rem;
+  background-color: white;
+}
+
+.feature .image-container {
+  width: 90%;
+  height: 65%;
+  margin: 0 auto;
+}
+
+.feature h2 {
+  padding-bottom: .5rem;
+  font-size: 2.25rem;
+  font-weight: bold;
+  color: #4a4a4a;
+}
+
+.feature h3 {
+  font-size: 1rem;
+  line-height: 1.2;
+  font-weight: 300;
+  color: #4a4a4a;
+}
+
+@media only screen and (max-width: 890px) {
+  .feature h2 {
+    font-size: 1.125rem;
+    line-height: 1.3;
+    font-weight: normal;
+  }
+
+  .feature h3 {
+    font-size: .875rem;
+    line-height: 1.4;
+  }
+}
+
+@media only screen and (max-width: 760px) {
+  #features-section {
+    flex-flow: column;
+    padding: 0;
+  }
+
+  .feature {
+    margin: 0;
+    padding: 1.25rem 1rem 0 1rem;
+  }
+}
+
+/* Filters Section */
+
+#filters-section {
+  padding: 4rem 0;
+  background-color: #4a4a4a;
+}
+
+#filters-section .content {
+  padding: 0 .625rem;
+  margin-bottom: 5rem;
+}
+
+#filters-section .content h2 {
+  font-size: 2.25rem;
+  font-weight: bold;
+  color: white;
+}
+
+#filters-section .content h3 {
+  font-size: 1rem;
+  line-height: 1.4;
+  font-weight: 300;
+  color: white;
+}
+
+#filters-section .images-container {
+  max-width: 100%;
+  padding: 0 1%;
+}
+
+@media only screen and (max-width: 760px) {
+  #filters-section {
+    padding: 1.5rem 0 0 0;
+  }
+
+  #filters-section .content {
+    margin-bottom: 1rem;
+  }
+
+  #filters-section .content h2 {
+    padding-bottom: .625rem;
+    font-size: 1.125rem;
+    line-height: 1.3;
+    font-weight: normal;
+  }
+
+  #filters-section .content h3 {
+    font-size: .875rem;
+    line-height: 1.4;
+  }
+
+  #filters-section .images-container {
+    padding: 0;
+  }
+
+  #filters-section .extra {
+    display: none;
+  }
+}
+
+/* Quotes Section */
+
+#quotes-section {
+  background-color: #f3f3f3;
+}
+
+#quotes-section content {
+  padding: 5rem 0;
+}
+
+#quotes-section quote {
+  padding-right: 1.875rem;
+  font-family: "Palatino", serif;
+  font-size: 1.875rem;
+  line-height: 1.1;
+  font-style: italic;
+  color: #4a4a4a;
+}
+
+#quotes-section quote-citation {
+  height: 1.875rem;
+}
+
+@media only screen and (max-width: 760px) {
+  #quotes-section content {
+    padding: 1.875rem .625rem;
+  }
+
+  #quotes-section quote {
+    font-size: 1.5rem;
+    line-height: 1.4;
+  }
+
+  #quotes-section quote-citation {
+    display: block;
+    padding-top: 1rem;
+    margin: auto;
+  }
+}
+
+/* Footer */
+
+footer {
+  background-color: #9b9b9b;
+  padding: 1.5rem 2rem;
+}
+
+footer .content {
+  color: white;
+  display: flex;
+  font-size: .75rem;
+}
+
+footer .copyright {
+  flex-grow: 1;
+}
+
+@media only screen and (min-width: 760px) {
+  footer .content {
+    font-size: .625rem;
+  }
+}
+
+--></style>
+</head>
+<body>
+<a name="0"></a><br style="clear: both">
+<a name="1"></a><br style="clear: both">
+<a name="2"></a><div style="position: static;" class="main-content">.main-content</div>
+<br style="clear: both">
+<a name="3"></a><div style="position: static;" class="center">.center</div>
+<br style="clear: both">
+<a name="4"></a><div style="position: static;" class="button">.button</div>
+<br style="clear: both">
+<a name="5"></a><div style="position: static;" class="image-container">.image-container</div>
+<br style="clear: both">
+<a name="6"></a><div style="position: static;" class="image-container"><img src="file://C:\Program Files\Rapid PHP 2016\data\resources\preview.png" style="position: static;"> .image-container img</div><br style="clear: both">
+<a name="7"></a><div style="position: static;" class="banner">.banner</div>
+<br style="clear: both">
+<a name="8"></a><div style="position: static;" id="sign-up-cta">#sign-up-cta</div>
+<br style="clear: both">
+<a name="9"></a><header style="position: static;">header</header><br style="clear: both">
+<a name="10"></a><header style="position: static;"><div style="position: static;" class="content">header .content</div>
+</header><br style="clear: both">
+<a name="11"></a><div style="position: static;" id="features-section">#features-section</div>
+<br style="clear: both">
+<a name="12"></a><div style="position: static;" class="feature">.feature</div>
+<br style="clear: both">
+<a name="13"></a><div style="position: static;" id="features-section"><div style="position: static;" class="image-container"><img src="file://C:\Program Files\Rapid PHP 2016\data\resources\preview.png" style="position: static;"> #features-section .image-container img</div></div><br style="clear: both">
+<a name="14"></a><div style="position: static;" id="filters-section">#filters-section</div>
+<br style="clear: both">
+<a name="15"></a><div style="position: static;" id="filters-section"><div style="position: static;" class="images-container">#filters-section .images-container</div>
+</div><br style="clear: both">
+<a name="16"></a><div style="position: static;" id="filters-section"><div style="position: static;" class="image-container"><img src="file://C:\Program Files\Rapid PHP 2016\data\resources\preview.png" style="position: static;"> #filters-section .image-container img</div></div><br style="clear: both">
+<a name="17"></a><div style="position: static;" id="quotes-section"><div style="position: static;" class="center">#quotes-section .center</div>
+</div><br style="clear: both">
+<a name="18"></a><div style="position: static;" class="quote">.quote</div>
+<br style="clear: both">
+<a name="19"></a><footer style="position: static;"><div style="position: static;" class="copyright">footer .copyright</div>
+</footer><br style="clear: both">
+<a name="20"></a><footer style="position: static;"><div style="position: static;" class="location">footer .location</div>
+</footer><br style="clear: both">
+<a name="21"></a><div style="position: static;" class="main-content"><div style="position: static;">.main-content (@media only screen and (max-width: 760px))</div>
+</div><br style="clear: both">
+<a name="22"></a><header style="position: static;">header</header><br style="clear: both">
+<a name="23"></a><header style="position: static;"><div style="position: static;" class="content">header .content</div>
+</header><br style="clear: both">
+<a name="24"></a><header style="position: static;"><div style="position: static;" class="logo">header .logo</div>
+</header><br style="clear: both">
+<a name="25"></a><header style="position: static;"><nav style="position: static;"><ul style="position: static;"><li>header nav ul</li></ul></nav></header><br style="clear: both">
+<a name="26"></a><nav style="position: static;"><ul><li style="position: static;">nav li</li></ul></nav><br style="clear: both">
+<a name="27"></a><nav style="position: static;"><div style="position: static;">nav a</div>
+</nav><br style="clear: both">
+<a name="28"></a><header style="position: static;"><div style="position: static;" class="icon">header .icon</div>
+</header><br style="clear: both">
+<a name="29"></a><header style="position: static;"><div style="position: static;" class="mobile">header .mobile</div>
+</header><br style="clear: both">
+<a name="30"></a><header style="position: static;"><div style="position: static;" class="desktop"><div style="position: static;">header .desktop (@media only screen and (max-width: 760px))</div>
+</div></header><br style="clear: both">
+<a name="31"></a><header style="position: static;"><div style="position: static;" class="mobile"><div style="position: static;">header .mobile (@media only screen and (max-width: 760px))</div>
+</div></header><br style="clear: both">
+<a name="32"></a><header style="position: static;"><div style="position: static;" class="content"><div style="position: static;">header .content (@media only screen and (max-width: 760px))</div>
+</div></header><br style="clear: both">
+<a name="33"></a><header style="position: static;"><div style="position: static;" class="mobile"><ul style="position: static;"><div style="position: static;">header .mobile ul (@media only screen and (max-width: 760px))</div>
+</ul></div></header><br style="clear: both">
+<a name="34"></a><header style="position: static;"><div style="position: static;" class="mobile"><li style="position: static;"><div style="position: static;">header .mobile li (@media only screen and (max-width: 760px))</div>
+</li></div></header><br style="clear: both">
+<a name="35"></a><header style="position: static;"><div style="position: static;" class="mobile"><div style="position: static;" class="button"><div style="position: static;">header .mobile .button (@media only screen and (max-width: 760px))</div>
+</div></div></header><br style="clear: both">
+<a name="36"></a><div style="position: static;" id="sign-up-section">#sign-up-section</div>
+<br style="clear: both">
+<a name="37"></a><div style="position: static;" id="sign-up-cta">#sign-up-cta</div>
+<br style="clear: both">
+<a name="38"></a><div style="position: static;" id="sign-up-cta"><div style="position: static;" class="content">#sign-up-cta .content</div>
+</div><br style="clear: both">
+<a name="39"></a><div style="position: static;" id="sign-up-cta"><h1 style="position: static;">#sign-up-cta h1</h1></div><br style="clear: both">
+<a name="40"></a><div style="position: static;" id="sign-up-cta"><h2 style="position: static;">#sign-up-cta h2</h2></div><br style="clear: both">
+<a name="41"></a><div style="position: static;" id="sign-up-cta"><span style="position: static;"><strong style="position: static;">#sign-up-cta span strong</strong></span></div><br style="clear: both">
+<a name="42"></a><div style="position: static;" id="sign-up-cta"><div style="position: static;" class="cursive">#sign-up-cta .cursive</div>
+</div><br style="clear: both">
+<a name="43"></a><div style="position: static;" id="sign-up-cta"><div style="position: static;" class="striking">#sign-up-cta .striking</div>
+</div><br style="clear: both">
+<a name="44"></a><div style="position: static;" id="sign-up-cta"><div style="position: static;" class="button">#sign-up-cta .button</div>
+</div><br style="clear: both">
+<a name="45"></a><div style="position: static;" id="sign-up-section"><div style="position: static;">#sign-up-section (@media only screen and (max-width: 760px))</div>
+</div><br style="clear: both">
+<a name="46"></a><div style="position: static;" id="sign-up-cta"><div style="position: static;">#sign-up-cta (@media only screen and (max-width: 760px))</div>
+</div><br style="clear: both">
+<a name="47"></a><div style="position: static;" id="sign-up-cta"><div style="position: static;" class="content"><div style="position: static;">#sign-up-cta .content (@media only screen and (max-width: 760px))</div>
+</div></div><br style="clear: both">
+<a name="48"></a><div style="position: static;" id="sign-up-cta"><div style="position: static;" class="email"><div style="position: static;">#sign-up-cta .email (@media only screen and (max-width: 760px))</div>
+</div></div><br style="clear: both">
+<a name="49"></a><div style="position: static;" id="sign-up-cta"><h1 style="position: static;"><div style="position: static;">#sign-up-cta h1 (@media only screen and (max-width: 760px))</div>
+</h1></div><br style="clear: both">
+<a name="50"></a><div style="position: static;" id="sign-up-cta"><h2 style="position: static;"><div style="position: static;">#sign-up-cta h2 (@media only screen and (max-width: 760px))</div>
+</h2></div><br style="clear: both">
+<a name="51"></a><div style="position: static;" id="sign-up-section"><div style="position: static;">#sign-up-section (@media only screen and (max-width: 450px))</div>
+</div><br style="clear: both">
+<a name="52"></a><div style="position: static;" id="sign-up-cta"><h1 style="position: static;"><div style="position: static;">#sign-up-cta h1 (@media only screen and (max-width: 450px))</div>
+</h1></div><br style="clear: both">
+<a name="53"></a><div style="position: static;" id="sign-up-cta"><h2 style="position: static;"><div style="position: static;">#sign-up-cta h2 (@media only screen and (max-width: 450px))</div>
+</h2></div><br style="clear: both">
+<a name="54"></a><div style="position: static;" id="features-section">#features-section</div>
+<br style="clear: both">
+<a name="55"></a><div style="position: static;" class="feature">.feature</div>
+<br style="clear: both">
+<a name="56"></a><div style="position: static;" class="feature"><div style="position: static;" class="image-container">.feature .image-container</div>
+</div><br style="clear: both">
+<a name="57"></a><div style="position: static;" class="feature"><h2 style="position: static;">.feature h2</h2></div><br style="clear: both">
+<a name="58"></a><div style="position: static;" class="feature"><h3 style="position: static;">.feature h3</h3></div><br style="clear: both">
+<a name="59"></a><div style="position: static;" class="feature"><h2 style="position: static;"><div style="position: static;">.feature h2 (@media only screen and (max-width: 890px))</div>
+</h2></div><br style="clear: both">
+<a name="60"></a><div style="position: static;" class="feature"><h3 style="position: static;"><div style="position: static;">.feature h3 (@media only screen and (max-width: 890px))</div>
+</h3></div><br style="clear: both">
+<a name="61"></a><div style="position: static;" id="features-section"><div style="position: static;">#features-section (@media only screen and (max-width: 760px))</div>
+</div><br style="clear: both">
+<a name="62"></a><div style="position: static;" class="feature"><div style="position: static;">.feature (@media only screen and (max-width: 760px))</div>
+</div><br style="clear: both">
+<a name="63"></a><div style="position: static;" id="filters-section">#filters-section</div>
+<br style="clear: both">
+<a name="64"></a><div style="position: static;" id="filters-section"><div style="position: static;" class="content">#filters-section .content</div>
+</div><br style="clear: both">
+<a name="65"></a><div style="position: static;" id="filters-section"><div style="position: static;" class="content"><h2 style="position: static;">#filters-section .content h2</h2></div></div><br style="clear: both">
+<a name="66"></a><div style="position: static;" id="filters-section"><div style="position: static;" class="content"><h3 style="position: static;">#filters-section .content h3</h3></div></div><br style="clear: both">
+<a name="67"></a><div style="position: static;" id="filters-section"><div style="position: static;" class="images-container">#filters-section .images-container</div>
+</div><br style="clear: both">
+<a name="68"></a><div style="position: static;" id="filters-section"><div style="position: static;">#filters-section (@media only screen and (max-width: 760px))</div>
+</div><br style="clear: both">
+<a name="69"></a><div style="position: static;" id="filters-section"><div style="position: static;" class="content"><div style="position: static;">#filters-section .content (@media only screen and (max-width: 760px))</div>
+</div></div><br style="clear: both">
+<a name="70"></a><div style="position: static;" id="filters-section"><div style="position: static;" class="content"><h2 style="position: static;"><div style="position: static;">#filters-section .content h2 (@media only screen and (max-width: 760px))</div>
+</h2></div></div><br style="clear: both">
+<a name="71"></a><div style="position: static;" id="filters-section"><div style="position: static;" class="content"><h3 style="position: static;"><div style="position: static;">#filters-section .content h3 (@media only screen and (max-width: 760px))</div>
+</h3></div></div><br style="clear: both">
+<a name="72"></a><div style="position: static;" id="filters-section"><div style="position: static;" class="images-container"><div style="position: static;">#filters-section .images-container (@media only screen and (max-width: 760px))</div>
+</div></div><br style="clear: both">
+<a name="73"></a><div style="position: static;" id="filters-section"><div style="position: static;" class="extra"><div style="position: static;">#filters-section .extra (@media only screen and (max-width: 760px))</div>
+</div></div><br style="clear: both">
+<a name="74"></a><div style="position: static;" id="quotes-section">#quotes-section</div>
+<br style="clear: both">
+<a name="75"></a><div style="position: static;" id="quotes-section"><content style="position: static;">#quotes-section content</content></div><br style="clear: both">
+<a name="76"></a><div style="position: static;" id="quotes-section"><quote style="position: static;">#quotes-section quote</quote></div><br style="clear: both">
+<a name="77"></a><div style="position: static;" id="quotes-section"><quote-citation style="position: static;">#quotes-section quote-citation</quote-citation></div><br style="clear: both">
+<a name="78"></a><div style="position: static;" id="quotes-section"><content style="position: static;"><div style="position: static;">#quotes-section content (@media only screen and (max-width: 760px))</div>
+</content></div><br style="clear: both">
+<a name="79"></a><div style="position: static;" id="quotes-section"><quote style="position: static;"><div style="position: static;">#quotes-section quote (@media only screen and (max-width: 760px))</div>
+</quote></div><br style="clear: both">
+<a name="80"></a><div style="position: static;" id="quotes-section"><quote-citation style="position: static;"><div style="position: static;">#quotes-section quote-citation (@media only screen and (max-width: 760px))</div>
+</quote-citation></div><br style="clear: both">
+<a name="81"></a><footer style="position: static;">footer</footer><br style="clear: both">
+<a name="82"></a><footer style="position: static;"><div style="position: static;" class="content">footer .content</div>
+</footer><br style="clear: both">
+<a name="83"></a><footer style="position: static;"><div style="position: static;" class="copyright">footer .copyright</div>
+</footer><br style="clear: both">
+<a name="84"></a><footer style="position: static;"><div style="position: static;" class="content"><div style="position: static;">footer .content (@media only screen and (min-width: 760px))</div>
+</div></footer><br style="clear: both">
+
+</body></html>
