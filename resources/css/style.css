@@ -335,7 +335,7 @@ header .mobile {
   color: #4a4a4a;
 }
 
-@media only screen and (max-width: 890px) {
+@media only screen and (max-width: 760px) {
   .feature h2 {
     font-size: 1.125rem;
     line-height: 1.3;
@@ -348,7 +348,7 @@ header .mobile {
   }
 }
 
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 450px) {
   #features-section {
     flex-flow: column;
     padding: 0;
@@ -390,6 +390,11 @@ header .mobile {
   padding: 0 1%;
 }
 
+#filters-section .image-container img{
+    width: 17rem;
+    height: 15rem;
+}
+
 @media only screen and (max-width: 760px) {
   #filters-section {
     padding: 1.5rem 0 0 0;
@@ -413,11 +418,19 @@ header .mobile {
 
   #filters-section .images-container {
     padding: 0;
+    align-items: stretch;
   }
 
   #filters-section .extra {
     display: none;
   }
+}
+
+@media only screen and (max-width: 450px){
+  #filters-section .image-container img{
+    width: 10rem;
+    height: 8rem;
+}
 }
 
 /* Quotes Section */
@@ -477,8 +490,8 @@ footer .copyright {
   flex-grow: 1;
 }
 
-@media only screen and (min-width: 760px) {
+@media only screen and (min-width: 450px) {
   footer .content {
     font-size: .625rem;
   }
-}
+  }
